@@ -29,6 +29,7 @@ void main() {
     printf("Enter the matrix elements:\n");
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
+            // input to this matrix is string not char with " not ' ,so take care^^
             scanf("%s", matrix[i][j]);
             removeQuotes(matrix[i][j]);
         }
